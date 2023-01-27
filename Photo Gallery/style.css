@@ -1,0 +1,232 @@
+body {
+	min-height: 783px;
+	background-color: aliceblue;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+.noofpage {
+	display: flex;
+	justify-content: end;
+	align-items: baseline;
+	width: 60%;
+}
+#noofpage {
+	color: aquamarine;
+	margin: 0;
+}
+.pagesearchbtn {
+	margin-left: 8px;
+	color: aquamarine;
+	border: none;
+	background-color: black;
+}
+.fixed-img {
+	height: 50em;
+	position: relative;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	overflow-x: scroll;
+}
+.fixed-img::-webkit-scrollbar {
+	display: none;
+}
+.down_img {
+	margin: 2em;
+	position: relative;
+}
+.down_img:hover {
+	cursor: pointer;
+	box-shadow: 5px 4px 6px;
+}
+.img-container {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	top: 4em;
+}
+.navbar-brand {
+	color: aquamarine;
+}
+
+.page-link {
+	color: aquamarine;
+	background-color: black;
+	border-color: aquamarine;
+}
+.page-link:hover {
+	cursor: pointer;
+}
+.overlay {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.9);
+	overflow-x: hidden;
+	transition: 0.5s;
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	align-items: center;
+	flex-flow: column;
+	position: relative;
+	top: 25%; /* 25% from the top */
+	width: 100%; /* 100% width */
+	text-align: center; /* Centered text/links */
+	margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 36px;
+	color: #818181;
+	display: block; /* Display block instead of inline */
+	transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
+	color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+	position: absolute;
+	top: 20px;
+	right: 45px;
+	font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+	.overlay a {
+		font-size: 20px;
+	}
+	.overlay .closebtn {
+		font-size: 40px;
+		top: 15px;
+		right: 35px;
+	}
+}
+
+/* search button */
+
+.searchimgs {
+	width: 100%;
+	height: 4.5vh;
+	outline: none;
+	border: none;
+}
+.searchimgs:hover {
+	background-color: #6c757d;
+}
+.searchimg-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#searchinput {
+	outline: none;
+	position: relative;
+}
+.searchimgs {
+	color: aquamarine;
+	border-radius: 5px;
+	background-color: black;
+}
+.landscape_img {
+	width: 50%;
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+	.noofpage {
+		left: 5.7em;
+		position: relative;
+		display: flex;
+		justify-content: end;
+		align-items: baseline;
+		width: 60%;
+		height: 2em;
+	}
+	#noofpage {
+		display: none;
+	}
+
+	.down_img {
+		width: 60%;
+	}
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+	.noofpage {
+		left: 3.7em;
+		position: relative;
+		display: flex;
+		justify-content: end;
+		align-items: baseline;
+		width: 60%;
+		height: 2em;
+	}
+	#noofpage {
+		display: none;
+	}
+
+	.down_img {
+		width: 60%;
+	}
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+	.noofpage {
+		left: 1.8em;
+		position: relative;
+		display: flex;
+		justify-content: end;
+		align-items: baseline;
+		width: 60%;
+		height: 2em;
+	}
+	#noofpage {
+		display: none;
+	}
+
+	.down_img {
+		width: 60%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	.noofpage {
+		top: -2.2em;
+		position: relative;
+		display: flex;
+		justify-content: end;
+		align-items: baseline;
+		width: 60%;
+		height: 2em;
+	}
+	#noofpage {
+		display: none;
+	}
+
+	.down_img {
+		width: 60%;
+	}
+}
