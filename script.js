@@ -273,7 +273,7 @@ function closethehoverimg() {
 
 async function searchimg() {
 
-	gtag('event', 'search_cta', {
+	gtag('event', 'search_cta_test_final', {
     'how_many_search_clicks': 'user',
    
   });
