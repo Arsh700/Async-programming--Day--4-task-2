@@ -272,6 +272,11 @@ function closethehoverimg() {
 }
 
 async function searchimg() {
+
+	gtag('event', 'search_cta', {
+    'how_many_search_clicks': 'user',
+   
+  });
 	search = true
 	var q = document.querySelector("#searchinput").value
 	// console.log(q)
