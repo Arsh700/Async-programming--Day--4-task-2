@@ -272,14 +272,15 @@ function closethehoverimg() {
 }
 
 async function searchimg(e) {
-console.log(e.target)
+	var q = document.querySelector("#searchinput").value
+
 	gtag('event', 'search_cta_test_final', {
     'how_many_search_clicks': 'user',
-'user_search_value':e.target
+'user_search_value':q
    
   });
 	search = true
-	var q = document.querySelector("#searchinput").value
+	
 	// console.log(q)
 	try {
 		var url = `https://api.unsplash.com/search/photos/?client_id=${client_id}&query=${q}&page=${pages}&per_page=${numberofpage}`
