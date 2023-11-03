@@ -271,10 +271,11 @@ function closethehoverimg() {
 	document.getElementById("myNav").style.width = "0%"
 }
 
-async function searchimg() {
+async function searchimg(e) {
 
 	gtag('event', 'search_cta_test_final', {
     'how_many_search_clicks': 'user',
+'user_search_value':e.target.value
    
   });
 	search = true
