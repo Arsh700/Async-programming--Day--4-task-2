@@ -275,7 +275,7 @@ async function searchimg(e) {
 
 	gtag('event', 'search_cta_test_final', {
     'how_many_search_clicks': 'user',
-'user_search_value':e.target.value
+'user_search_value':e.target
    
   });
 	search = true
