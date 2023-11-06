@@ -275,10 +275,8 @@ async function searchimg(e) {
 	var q = document.querySelector("#searchinput").value
 
 	gtag('event', 'search_cta_test_final', {
-    'how_many_search_clicks': 'user',
-'user_search_value':q
-   
-  });
+    'how_many_search_clicks': q,
+ });
 	search = true
 	
 	// console.log(q)
