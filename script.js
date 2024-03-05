@@ -211,6 +211,7 @@ function effect(e) {
 					element.src = rawimgdata // Add raw image into element
 					let element1 = document.querySelector(".img-dowload") // Dowload button
 					element1.href = e.links.download // Add download link to href attribute
+					element1.setAttribute("download", "download);
 					console.log(e.links.download)
 
 					console.log(e.src)
@@ -232,6 +233,7 @@ function effect(e) {
 					element.src = rawimgdata // Add raw image into element
 					let element1 = document.querySelector(".img-dowload") // Dowload button
 					element1.href = e.links.download // Add download link to href attribute
+					element1.setAttribute("download", "download);
 					console.log(e.links.download)
 
 					console.log(e.src)
